@@ -1,0 +1,20 @@
+<section class="container">
+    <div>
+        <img [src]="event?.imageUrl" alt="event?.name" height="100px">
+        <h2 class="text-primary">{{event?.name}}</h2>
+    </div>
+    <div class="row pl-5 pt-5">
+        <div class="col-md-5">
+            <div><strong>Date:</strong> {{event?.date}}</div>
+            <div><strong>Time:</strong> {{event?.time}}</div>
+            <div><strong>Price:</strong> ${{event?.price}}</div>
+        </div>
+        <div class="col-md-5">
+            <address>
+                <strong>Address:</strong>
+                {{event?.location?.address}}<br />
+                {{event?.location?.city}}, {{event?.location?.country}}
+            </address>
+        </div>
+    </div>
+</section>

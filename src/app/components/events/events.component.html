@@ -1,0 +1,9 @@
+<section class="container pt-3">
+    <h1>Upcoming Angular Events</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-6" *ngFor="let item of events">
+            <app-event-thumbnail (click)="startToastr(item.name)" [event]="item"></app-event-thumbnail>
+        </div>
+    </div>
+</section>
