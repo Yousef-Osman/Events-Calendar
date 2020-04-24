@@ -20,3 +20,12 @@
         </div>
     </div>
 </section>
+
+<section class="container my-5">
+    <input type="button" value="Click Here" (click)="getData()" class="btn btn-primary">
+    <div *ngFor="let post of posts" class="bg-dim thumbnail p-3 my-3">
+        <div><strong>Id: </strong> {{ post.id | json }}</div>
+        <div><strong>Title: </strong> {{ post.title | json }}</div>
+        <div><strong>Body: </strong> {{ post.body | json }}</div>
+    </div>
+</section>
